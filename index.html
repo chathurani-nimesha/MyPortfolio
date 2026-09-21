@@ -1,313 +1,534 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Chathurani Thuduwage">
-  <meta name="author" content="Chathurani Thuduwage">
-  <title>Chathurani Thuduwage</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chathurani Thuduwage" />
+    <meta name="author" content="Chathurani Thuduwage" />
+    <title>Chathurani Thuduwage</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
 
-<body>
-  <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="cursor-glow" id="cursorGlow"></div>
+  <body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+    <div class="cursor-glow" id="cursorGlow"></div>
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#home"><span>Chathurani Thuduwage</span></a>
-      <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-label="Toggle navigation">
-        <i class="bi bi-list fs-2"></i>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
-          <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-          <li class="nav-item ms-lg-2">
-            <a class="btn btn-outline-light btn-sm px-3" href="#contact">Let's Talk <i class="bi bi-arrow-up-right ms-1"></i></a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-
-  <main>
-    <section id="home" class="hero-section d-flex align-items-center">
-      <div class="hero-grid"></div>
-      <div class="container position-relative">
-        <div class="row align-items-center g-5">
-          <div class="col-lg-7">
-            <div class="eyebrow reveal"><span class="pulse-dot"></span> Open to Software Engineering Opportunities</div>
-            <h1 class="display-title reveal delay-1">Building digital experiences with <span>code & curiosity.</span></h1>
-            <p class="hero-copy reveal delay-2">
-              I'm <strong>Chathurani Thuduwage</strong>, a 3rd-year Computing and Information Systems undergraduate at
-              Sabaragamuwa University of Sri Lanka, interested in backend and full-stack development.
-            </p>
-            <div class="d-flex flex-wrap gap-3 reveal delay-3">
-              <a href="#projects" class="btn btn-primary btn-lg px-4">View My Work <i class="bi bi-arrow-down-right ms-2"></i></a>
-              <a href="Documents/Chathurani Thuduwage CV.pdf" class="btn btn-outline-light btn-lg px-4" download>Download CV <i class="bi bi-download ms-2"></i></a>
-            </div>
-            <div class="social-row mt-4 reveal delay-4">
-              <a href="https://github.com/chathurani-nimesha" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/chathurani-nimesha/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-              <a href="#contact" aria-label="Email"><i class="bi bi-envelope"></i></a>
-            </div>
-          </div>
-
-          <div class="col-lg-5">
-            <div class="hero-card reveal delay-2">
-              <div class="code-window">
-                <div class="window-bar">
-                  <div class="window-dots"><span></span><span></span><span></span></div>
-                  <small>developer.js</small>
-                  <i class="bi bi-three-dots"></i>
-                </div>
-                <div class="code-body">
-                  <div><span class="code-purple">const</span> <span class="code-blue">developer</span> = {</div>
-                  <div class="indent"><span class="code-key">name:</span> <span class="code-green">'Chathurani Thuduwage'</span>,</div>
-                  <div class="indent"><span class="code-key">role:</span> <span class="code-green">'Software Engineer'</span>,</div>
-                  <div class="indent"><span class="code-key">focus:</span> [</div>
-                  <div class="indent2"><span class="code-green">'Backend'</span>, <span class="code-green">'Frontend'</span>,</div>
-                  <div class="indent2"><span class="code-green">'Full-Stack'</span></div>
-                  <div class="indent">],</div>
-                  <div class="indent"><span class="code-key">coffee:</span> <span class="code-orange">true</span></div>
-                  <div>};</div>
-                  <div class="code-comment">// Always learning. Always building.</div>
-                </div>
-              </div>
-              <div class="floating-badge badge-one"><i class="bi bi-code-slash"></i> Build</div>
-              <div class="floating-badge badge-two"><i class="bi bi-lightning-charge"></i> Learn</div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="scroll-down" href="#about"><span>Scroll to explore</span><i class="bi bi-arrow-down"></i></a>
-    </section>
-
-    <section id="about" class="section-pad">
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <div class="section-heading reveal">
-          
-          <h2>A developer who enjoys <span>solving problems.</span></h2>
-        </div>
-        <div class="row g-5 align-items-center">
-          <div class="col-lg-5 reveal">
-            <div class="about-card">
-              <div class="about-number">CT</div>
-              <p class="mb-0">Computing & Information Systems</p>
-              <div class="mini-line"></div>
-              <small>Sabaragamuwa University of Sri Lanka</small>
-            </div>
-          </div>
-          <div class="col-lg-7 reveal delay-1">
-            <p class="lead text-light-emphasis">
-              I enjoy turning ideas into practical software and learning how systems work from the inside out.
-            </p>
-            <p class="text-secondary">
-              My current interests include Java, React, JavaScript, PHP, relational databases, REST APIs,
-              software testing, and UI/UX. I particularly enjoy projects where
-              frontend experiences connect with meaningful backend logic and data.
-            </p>
-            <p class="text-secondary">
-              I'm currently developing my skills through university coursework, personal projects and
-              open-source activities while preparing for a software engineering internship.
-            </p>
-            <div class="d-flex flex-wrap gap-2 mt-4">
-              <span class="soft-pill">Problem Solving</span>
-              <span class="soft-pill">Teamwork</span>
-              <span class="soft-pill">Continuous Learning</span>
-              <span class="soft-pill">UI/UX</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="skills" class="section-pad section-dark">
-      <div class="container">
-        <div class="section-heading reveal">
-          
-          <h2>Tools I use to <span>build.</span></h2>
-        </div>
-        <div class="row g-3">
-          <div class="col-6 col-md-4 col-lg-3 reveal"><div class="skill-card"><i class="bi bi-cup-hot"></i><h5>Java</h5><p>OOP · JUnit</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3 reveal delay-1"><div class="skill-card"><i class="bi bi-filetype-js"></i><h5>JavaScript</h5><p>ES6+ · DOM</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3 reveal delay-2"><div class="skill-card"><i class="bi bi-bootstrap"></i><h5>Bootstrap</h5><p>Responsive UI</p></div></div>
-          <!--<div class="col-6 col-md-4 col-lg-3 reveal delay-3"><div class="skill-card"><i class="bi bi-braces"></i><h5>React</h5><p>Vite · Components</p></div></div>-->
-          <div class="col-6 col-md-4 col-lg-3 reveal"><div class="skill-card"><i class="bi bi-filetype-php"></i><h5>PHP</h5><p>Backend fundamentals</p></div></div>
-          <div class="col-6 col-md-4 col-lg-3 reveal delay-1"><div class="skill-card"><i class="bi bi-database"></i><h5>MySQL</h5><p>SQL · Database design</p></div></div>
-          <!--<div class="col-6 col-md-4 col-lg-3 reveal delay-2"><div class="skill-card"><i class="bi bi-globe2"></i><h5>PostgreSQL</h5><p>PostGIS · Geospatial</p></div></div>-->
-          <div class="col-6 col-md-4 col-lg-3 reveal delay-3"><div class="skill-card"><i class="bi bi-git"></i><h5>Git & GitHub</h5><p>Version control</p></div></div>
-        </div>
-
-        <div class="tech-strip reveal mt-5">
-          <span>CORE TECHNOLOGIES</span>
-          <div class="tech-icons">
-            <i class="bi bi-filetype-html" title="HTML"></i>
-            <i class="bi bi-filetype-css" title="CSS"></i>
-            <i class="bi bi-filetype-js" title="JavaScript"></i>
-            <i class="bi bi-bootstrap" title="Bootstrap"></i>
-            <i class="bi bi-git" title="Git"></i>
-            <i class="bi bi-github" title="GitHub"></i>
-            <i class="bi bi-database" title="Database"></i>
-          </div>
+        <a class="navbar-brand fw-bold" href="#home"
+          ><span>Chathurani Thuduwage</span></a
+        >
+        <button
+          class="navbar-toggler border-0 shadow-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-label="Toggle navigation"
+        >
+          <i class="bi bi-list fs-2"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+            <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item ms-lg-2">
+              <a class="btn btn-outline-light btn-sm px-3" href="#contact"
+                >Let's Talk <i class="bi bi-arrow-up-right ms-1"></i
+              ></a>
+            </li>
+          </ul>
         </div>
       </div>
-    </section>
+    </nav>
 
-    <section id="projects" class="section-pad">
-      <div class="container">
-        <div class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3 reveal">
-          <div>
-            
-            <h2>My <span>works</span></h2>
-          </div>
-          <a href="https://github.com/chathurani-nimesha" target="_blank" rel="noopener" class="text-link">View GitHub <i class="bi bi-arrow-up-right"></i></a>
-        </div>
-
-        <!---->
-        <div class="row g-4">
-          <div class="col-lg-7 reveal">
-            <article class="project-card project-featured h-100">
-              <div class="project-top">
-                <span class="project-index">01</span>
-                <div class="project-links"><a href="https://github.com/fedratlas-org" target="_blank" rel="noopener" aria-label="Fedratlas GitHub"><i class="bi bi-github"></i></a></div>
-              </div>
-              <div class="project-visual map-visual">
-                <div class="map-lines"></div>
-                <div class="map-pin"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="map-label">FEDRATLAS</div>
-              </div>
-              <div class="project-content">
-                <p class="project-type">CAPSTONE PROJECT</p>
-                <h3>Fedratlas Map</h3>
-                <p>Federated protocol for secure geospatial data sharing and synchronization, designed around interoperable geospatial services.</p>
-                <div class="tag-row">
-                  <span>React</span><span>Node.js</span><span>PostgreSQL</span><span>PostGIS</span><span>OGC API</span>
-                </div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-lg-5 reveal delay-1">
-            <article class="project-card h-100">
-              <div class="project-top"><span class="project-index">02</span><div class="project-links"><a href="https://github.com/chathurani-nimesha" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></div></div>
-              <div class="project-visual browser-visual"><div class="browser-card"><span></span><span></span><span></span><div class="browser-lines"></div></div></div>
-              <div class="project-content">
-                <p class="project-type">WEB DEVELOPMENT</p>
-                <h3>Personal Portfolio</h3>
-                <p>Responsive developer portfolio focused on clear presentation, project storytelling and accessible navigation.</p>
-                <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span></div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 reveal">
-            <article class="project-card h-100">
-              <div class="project-top"><span class="project-index">03</span><div class="project-links"><a href="https://github.com/chathurani-nimesha" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></div></div>
-              <div class="project-visual tracker-visual"><i class="bi bi-kanban"></i><div class="tracker-bars"><span></span><span></span><span></span></div></div>
-              <div class="project-content">
-                <p class="project-type">JAVASCRIPT</p>
-                <h3>Job Tracker</h3>
-                <p>A simple interface for organizing internship and job applications with a clean, practical workflow.</p>
-                <div class="tag-row"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
-              </div>
-            </article>
-          </div>
-
-          <div class="col-md-6 reveal delay-1">
-            <article class="project-card h-100">
-              <div class="project-top"><span class="project-index">04</span><div class="project-links"><a href="https://github.com/chathurani-nimesha" target="_blank" rel="noopener"><i class="bi bi-github"></i></a></div></div>
-              <div class="project-visual java-visual"><i class="bi bi-cup-hot-fill"></i><span>OOP</span><span>TESTING</span></div>
-              <div class="project-content">
-                <p class="project-type">JAVA / SQA</p>
-                <h3>Java & JUnit Projects</h3>
-                <p>University projects covering object-oriented programming, application logic and unit testing with JUnit.</p>
-                <div class="tag-row"><span>Java</span><span>OOP</span><span>JUnit</span><span>SQA</span></div>
-              </div>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!---->
-
-    <section id="education" class="section-pad section-dark">
-      <div class="container">
-        <div class="section-heading reveal">
-          
-          <h2>Learning, building & <span>growing.</span></h2>
-        </div>
-        <div class="timeline">
-          <div class="timeline-item reveal">
-            <div class="timeline-dot"></div>
-            <div class="timeline-year">CURRENT</div>
-            <div>
-              <h4>BSc (Hons) Computing & Information Systems</h4>
-              <p class="mb-1">Sabaragamuwa University of Sri Lanka</p>
-              <p class="text-secondary mb-0">3rd-year undergraduate · Faculty of Computing</p>
-            </div>
-          </div>
-          <div class="timeline-item reveal delay-1">
-            <div class="timeline-dot"></div>
-            <div class="timeline-year">CURRENT</div>
-            <div>
-              <h4>IT Certified Master</h4>
-              <p class="text-secondary mb-0">Institute of Computer Engineering Technology</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="stats-row mt-5 reveal">
-          <div><strong>3rd</strong><span>Year Undergraduate</span></div>
-          <div><strong>∞</strong><span>Curiosity to Learn</span></div>
-          <div><strong>24/7</strong><span>Ideas to Build</span></div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact" class="section-pad contact-section">
-      <div class="container">
-        <div class="contact-box reveal">
+    <main>
+      <section id="home" class="hero-section d-flex align-items-center">
+        <div class="hero-grid"></div>
+        <div class="container position-relative">
           <div class="row align-items-center g-5">
             <div class="col-lg-7">
-              
-              <h2>Let's build something <span>meaningful.</span></h2>
-              <p class="text-secondary mt-3 mb-0">I'm open to software engineering internship opportunities, collaborations and interesting projects.</p>
+              <div class="eyebrow reveal">
+                <span class="pulse-dot"></span> Open to Software Engineering
+                Opportunities
+              </div>
+              <h1 class="display-title reveal delay-1">
+                Building digital experiences with <span>code & curiosity.</span>
+              </h1>
+              <p class="hero-copy reveal delay-2">
+                I'm <strong>Chathurani Thuduwage</strong>, a 3rd-year Computing
+                and Information Systems undergraduate at Sabaragamuwa University
+                of Sri Lanka, interested in backend and full-stack development.
+              </p>
+              <div class="d-flex flex-wrap gap-3 reveal delay-3">
+                <a href="#projects" class="btn btn-primary btn-lg px-4"
+                  >View My Work <i class="bi bi-arrow-down-right ms-2"></i
+                ></a>
+                <a
+                  href="Documents/Chathurani Thuduwage CV.pdf"
+                  class="btn btn-outline-light btn-lg px-4"
+                  download
+                  >Download CV <i class="bi bi-download ms-2"></i
+                ></a>
+              </div>
+              <div class="social-row mt-4 reveal delay-4">
+                <a
+                  href="https://github.com/chathurani-nimesha"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="GitHub"
+                  ><i class="bi bi-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/chathurani-nimesha/"
+                  target="_blank"
+                  rel="noopener"
+                  aria-label="LinkedIn"
+                  ><i class="bi bi-linkedin"></i
+                ></a>
+                <a href="#contact" aria-label="Email"
+                  ><i class="bi bi-envelope"></i
+                ></a>
+              </div>
             </div>
+
             <div class="col-lg-5">
-              <div class="contact-links">
-                <a href="mailto:chathunimesha389@gmail.com"><i class="bi bi-envelope"></i><span>chathunimesha389@gmail.com</span><i class="bi bi-arrow-up-right ms-auto"></i></a>
-                <a href="https://www.linkedin.com/in/chathurani-nimesha/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i><span>LinkedIn</span><i class="bi bi-arrow-up-right ms-auto"></i></a>
-                <a href="https://github.com/chathurani-nimesha" target="_blank" rel="noopener"><i class="bi bi-github"></i><span>GitHub</span><i class="bi bi-arrow-up-right ms-auto"></i></a>
+              <div class="hero-card reveal delay-2">
+                <div class="code-window">
+                  <div class="window-bar">
+                    <div class="window-dots">
+                      <span></span><span></span><span></span>
+                    </div>
+                    <small>developer.js</small>
+                    <i class="bi bi-three-dots"></i>
+                  </div>
+                  <div class="code-body">
+                    <div>
+                      <span class="code-purple">const</span>
+                      <span class="code-blue">developer</span> = {
+                    </div>
+                    <div class="indent">
+                      <span class="code-key">name:</span>
+                      <span class="code-green">'Chathurani Thuduwage'</span>,
+                    </div>
+                    <div class="indent">
+                      <span class="code-key">role:</span>
+                      <span class="code-green">'Software Engineer'</span>,
+                    </div>
+                    <div class="indent">
+                      <span class="code-key">focus:</span> [
+                    </div>
+                    <div class="indent2">
+                      <span class="code-green">'Backend'</span>,
+                      <span class="code-green">'Frontend'</span>,
+                    </div>
+                    <div class="indent2">
+                      <span class="code-green">'Full-Stack'</span>
+                    </div>
+                    <div class="indent">],</div>
+                    <div class="indent">
+                      <span class="code-key">coffee:</span>
+                      <span class="code-orange">true</span>
+                    </div>
+                    <div>};</div>
+                    <div class="code-comment">
+                      // Always learning. Always building.
+                    </div>
+                  </div>
+                </div>
+                <div class="floating-badge badge-one">
+                  <i class="bi bi-code-slash"></i> Build
+                </div>
+                <div class="floating-badge badge-two">
+                  <i class="bi bi-lightning-charge"></i> Learn
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <a class="scroll-down" href="#about"
+          ><span>Scroll to explore</span><i class="bi bi-arrow-down"></i
+        ></a>
+      </section>
+
+      <section id="about" class="section-pad">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>A developer who enjoys <span>solving problems.</span></h2>
+          </div>
+          <div class="row g-5 align-items-center">
+            <div class="col-lg-5 reveal">
+              <div class="about-card">
+                <div class="about-number">CT</div>
+                <p class="mb-0">Computing & Information Systems</p>
+                <div class="mini-line"></div>
+                <small>Sabaragamuwa University of Sri Lanka</small>
+              </div>
+            </div>
+            <div class="col-lg-7 reveal delay-1">
+              <p class="lead text-light-emphasis">
+                I enjoy turning ideas into practical software and learning how
+                systems work from the inside out.
+              </p>
+              <p class="text-secondary">
+                My current interests include Java, React, JavaScript, PHP,
+                relational databases, REST APIs, software testing, and UI/UX. I
+                particularly enjoy projects where frontend experiences connect
+                with meaningful backend logic and data.
+              </p>
+              <p class="text-secondary">
+                I'm currently developing my skills through university
+                coursework, personal projects and open-source activities while
+                preparing for a software engineering internship.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mt-4">
+                <span class="soft-pill">Problem Solving</span>
+                <span class="soft-pill">Teamwork</span>
+                <span class="soft-pill">Continuous Learning</span>
+                <span class="soft-pill">UI/UX</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-pad section-dark">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Tools I use to <span>build.</span></h2>
+          </div>
+          <div class="row g-3">
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+              <div class="skill-card">
+                <i class="bi bi-cup-hot"></i>
+                <h5>Java</h5>
+                <p>OOP · JUnit</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal delay-1">
+              <div class="skill-card">
+                <i class="bi bi-filetype-js"></i>
+                <h5>JavaScript</h5>
+                <p>ES6+ · DOM</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal delay-2">
+              <div class="skill-card">
+                <i class="bi bi-bootstrap"></i>
+                <h5>Bootstrap</h5>
+                <p>Responsive UI</p>
+              </div>
+            </div>
+            <!--<div class="col-6 col-md-4 col-lg-3 reveal delay-3"><div class="skill-card"><i class="bi bi-braces"></i><h5>React</h5><p>Vite · Components</p></div></div>-->
+            <div class="col-6 col-md-4 col-lg-3 reveal">
+              <div class="skill-card">
+                <i class="bi bi-filetype-php"></i>
+                <h5>PHP</h5>
+                <p>Backend fundamentals</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4 col-lg-3 reveal delay-1">
+              <div class="skill-card">
+                <i class="bi bi-database"></i>
+                <h5>MySQL</h5>
+                <p>SQL · Database design</p>
+              </div>
+            </div>
+            <!--<div class="col-6 col-md-4 col-lg-3 reveal delay-2"><div class="skill-card"><i class="bi bi-globe2"></i><h5>PostgreSQL</h5><p>PostGIS · Geospatial</p></div></div>-->
+            <div class="col-6 col-md-4 col-lg-3 reveal delay-3">
+              <div class="skill-card">
+                <i class="bi bi-git"></i>
+                <h5>Git & GitHub</h5>
+                <p>Version control</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tech-strip reveal mt-5">
+            <span>CORE TECHNOLOGIES</span>
+            <div class="tech-icons">
+              <i class="bi bi-filetype-html" title="HTML"></i>
+              <i class="bi bi-filetype-css" title="CSS"></i>
+              <i class="bi bi-filetype-js" title="JavaScript"></i>
+              <i class="bi bi-bootstrap" title="Bootstrap"></i>
+              <i class="bi bi-git" title="Git"></i>
+              <i class="bi bi-github" title="GitHub"></i>
+              <i class="bi bi-database" title="Database"></i>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-pad">
+        <div class="container">
+          <div
+            class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3 reveal"
+          >
+            <div>
+              <h2>My <span>works</span></h2>
+            </div>
+            <a
+              href="https://github.com/chathurani-nimesha"
+              target="_blank"
+              rel="noopener"
+              class="text-link"
+              >View GitHub <i class="bi bi-arrow-up-right"></i
+            ></a>
+          </div>
+
+          <!---->
+          <div class="row g-4">
+            <div class="col-lg-5 reveal delay-1">
+              <article class="project-card h-100">
+                <div class="project-top">
+                  <span class="project-index">01</span>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/chathurani-nimesha/Appointment-Booking-System"
+                      target="_blank"
+                      rel="noopener"
+                      aria-label="Appointment Booking System GitHub"
+                    >
+                      <i class="bi bi-github"></i>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="project-visual browser-visual">
+                  <div class="browser-card">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <div class="browser-lines"></div>
+                  </div>
+                </div>
+
+                <div class="project-content">
+                  <p class="project-type">FULL-STACK DEVELOPMENT</p>
+
+                  <h3>Appointment Booking System</h3>
+
+                  <p>
+                    Full-stack appointment booking system with secure
+                    authentication, appointment scheduling, booking management
+                    and a responsive user interface.
+                  </p>
+
+                  <div class="tag-row">
+                    <span>MongoDB</span>
+                    <span>Express.js</span>
+                    <span>React.js</span>
+                    <span>Node.js</span>
+                    <span>JWT</span>
+                    <span>Tailwind CSS</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-5 reveal delay-1">
+              <article class="project-card h-100">
+                <div class="project-top">
+                  <span class="project-index">02</span>
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/chathurani-nimesha"
+                      target="_blank"
+                      rel="noopener"
+                      ><i class="bi bi-github"></i
+                    ></a>
+                  </div>
+                </div>
+                <div class="project-visual browser-visual">
+                  <div class="browser-card">
+                    <span></span><span></span><span></span>
+                    <div class="browser-lines"></div>
+                  </div>
+                </div>
+                <div class="project-content">
+                  <p class="project-type">WEB DEVELOPMENT</p>
+                  <h3>Personal Portfolio</h3>
+                  <p>
+                    Responsive developer portfolio focused on clear
+                    presentation, project storytelling and accessible
+                    navigation.
+                  </p>
+                  <div class="tag-row">
+                    <span>HTML</span><span>CSS</span><span>JavaScript</span
+                    ><span>Bootstrap</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-lg-5 reveal delay-2">
+  <article class="project-card h-100">
+    <div class="project-top">
+      <span class="project-index">03</span>
+      <div class="project-links">
+        <a href="https://github.com/chathurani-nimesha"
+           target="_blank"
+           rel="noopener"
+           aria-label="iFriend Contact Organizer GitHub">
+          <i class="bi bi-github"></i>
+        </a>
       </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-3">
-      <span>© <span id="year"></span> Chathurani Thuduwage</span>
     </div>
-  </footer>
 
-  <button id="backToTop" class="back-to-top" aria-label="Back to top"><i class="bi bi-arrow-up"></i></button>
+    <div class="project-visual browser-visual">
+      <div class="browser-card">
+        <span></span>
+        <span></span>
+        <span></span>
+        <div class="browser-lines"></div>
+      </div>
+    </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
+    <div class="project-content">
+      <p class="project-type">JAVA • OOP</p>
+
+      <h3>iFriend Contact Organizer</h3>
+
+      <p>
+        Java-based contact management application implementing CRUD operations
+        and core Object-Oriented Programming principles for structured and
+        maintainable code.
+      </p>
+
+      <div class="tag-row">
+        <span>Java</span>
+        <span>OOP</span>
+        <span>CRUD</span>
+        <span>Encapsulation</span>
+        <span>Modular Design</span>
+      </div>
+    </div>
+  </article>
+</div>
+           
+        </div>
+      </section>
+
+      <!---->
+
+      <section id="education" class="section-pad section-dark">
+        <div class="container">
+          <div class="section-heading reveal">
+            <h2>Learning, building & <span>growing.</span></h2>
+          </div>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">CURRENT</div>
+              <div>
+                <h4>BSc (Hons) Computing & Information Systems</h4>
+                <p class="mb-1">Sabaragamuwa University of Sri Lanka</p>
+                <p class="text-secondary mb-0">
+                  3rd-year undergraduate · Faculty of Computing
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item reveal delay-1">
+              <div class="timeline-dot"></div>
+              <div class="timeline-year">CURRENT</div>
+              <div>
+                <h4>IT Certified Master</h4>
+                <p class="text-secondary mb-0">
+                  Institute of Computer Engineering Technology
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="stats-row mt-5 reveal">
+            <div><strong>3rd</strong><span>Year Undergraduate</span></div>
+            <div><strong>∞</strong><span>Curiosity to Learn</span></div>
+            <div><strong>24/7</strong><span>Ideas to Build</span></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section-pad contact-section">
+        <div class="container">
+          <div class="contact-box reveal">
+            <div class="row align-items-center g-5">
+              <div class="col-lg-7">
+                <h2>Let's build something <span>meaningful.</span></h2>
+                <p class="text-secondary mt-3 mb-0">
+                  I'm open to software engineering internship opportunities,
+                  collaborations and interesting projects.
+                </p>
+              </div>
+              <div class="col-lg-5">
+                <div class="contact-links">
+                  <a href="mailto:chathunimesha389@gmail.com"
+                    ><i class="bi bi-envelope"></i
+                    ><span>chathunimesha389@gmail.com</span
+                    ><i class="bi bi-arrow-up-right ms-auto"></i
+                  ></a>
+                  <a
+                    href="https://www.linkedin.com/in/chathurani-nimesha/"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-linkedin"></i><span>LinkedIn</span
+                    ><i class="bi bi-arrow-up-right ms-auto"></i
+                  ></a>
+                  <a
+                    href="https://github.com/chathurani-nimesha"
+                    target="_blank"
+                    rel="noopener"
+                    ><i class="bi bi-github"></i><span>GitHub</span
+                    ><i class="bi bi-arrow-up-right ms-auto"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div
+        class="container d-flex flex-wrap justify-content-between align-items-center gap-3"
+      >
+        <span>© <span id="year"></span> Chathurani Thuduwage</span>
+      </div>
+    </footer>
+
+    <button id="backToTop" class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
