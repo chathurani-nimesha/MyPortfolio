@@ -287,13 +287,14 @@
         </div>
       </section>
 
-      <section id="projects" class="section-pad">
+      <!-- <section id="projects" class="section-pad">
         <div class="container">
           <div
             class="section-heading d-flex flex-wrap justify-content-between align-items-end gap-3 reveal"
           >
             <div>
               <h2>My <span>works</span></h2>
+              <p>Explore my projects from GitHub</p>
             </div>
             <a
               href="https://github.com/chathurani-nimesha"
@@ -304,7 +305,7 @@
             ></a>
           </div>
 
-          <!---->
+        
           <div class="row g-4">
             <div class="col-lg-5 reveal delay-1">
               <article class="project-card h-100">
@@ -435,9 +436,38 @@
 </div>
            
         </div>
-      </section>
+      </section> -->
 
       <!---->
+
+      <section id="projects" class="section-pad">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="section-kicker">MY WORK</p>
+            <h2>Featured <span>Projects</span></h2>
+            <p>Some of my selected development projects.</p>
+          </div>
+
+          <!-- Selected projects are loaded using the GitHub API -->
+          <div id="featuredProjects" class="row g-4" aria-live="polite">
+            <div class="col-12">
+              <p class="text-secondary">Loading projects...</p>
+            </div>
+          </div>
+
+          <div class="text-center mt-5">
+            <a
+              href="https://github.com/chathurani-nimesha"
+              class="btn btn-outline-light"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View All GitHub Projects
+              <i class="bi bi-arrow-up-right ms-1"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
       <section id="education" class="section-pad section-dark">
         <div class="container">
